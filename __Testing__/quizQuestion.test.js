@@ -33,7 +33,7 @@ describe('[questions] must be an array', () => {
       });
     });
   
-    test('questions array should contain valid structure', () => {
+    test('questions array should contain valid structure (Object)', () => {
       expect(questions).toEqual(
         expect.arrayContaining([
           expect.objectContaining({
