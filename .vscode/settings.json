@@ -9,6 +9,15 @@
             "group": "employe_data",
             "username": "Siyabonga",
             "database": "SiyabongaDB"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "quiz_app_db",
+            "database": "quiz_app_db",
+            "username": "Siyabonga"
         }
     ]
 }

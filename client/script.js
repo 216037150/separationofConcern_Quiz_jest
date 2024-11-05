@@ -1,6 +1,8 @@
 import { questions } from '../UtilFiles/quizQuestions.js';
 import { validatePlayerName } from '../UtilFiles/validatePlayerName.js';
 import { Utils } from '../storage/localStorage.js';
+import { fetchHighScores } from '../server/server.js';
+import {saveScoreToDb} from '../server/server.js'
 
 // DOM elements
 let currentQuestion = 0;
@@ -118,8 +120,8 @@ function resetQuiz() {
 }
 
 function init() {
-  document.getElementById('start-btn').addEventListener('click', startQuiz);
-  document.getElementById('restart-btn').addEventListener('click', resetQuiz);
+  document.getElementById('start-btn').addEventListener('click', startQuiz());
+  document.getElementById('restart-btn').addEventListener('click', resetQuiz());
 }
 
 document.addEventListener('DOMContentLoaded', init);
